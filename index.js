@@ -75,5 +75,6 @@ const latest_filepath = path.join(processed_directory, 'latest.json')
 
 await writeJson(source_filepath, parsed)
 await writeJson(processed_filepath, data)
+await writeJson(latest_filepath, data)
 await writeJson(metadata_filepath, metadata)
 
