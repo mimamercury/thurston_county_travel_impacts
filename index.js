@@ -41,12 +41,16 @@ const features = []
 for (const item of items) {
     const name = item[5][0][1][0]
     const description = item[5][1][1][0]
-    const coordinates = (item[1] || item[2])[0][0].reverse()
+    let coordinates = (item[1] || item[2])[0][0]
 
     let feature
     if (coordinates.length === 2) {
+        coordinates = coordinates.reverse()
         feature = turf.point(coordinates, { name, description }, { id: slugify(`${name}_point`)})
     } else {
+        coordinates = coordinates.map((point) => {
+            return point.reverse()
+        })
         feature = turf.lineString(coordinates, { name, description }, { id: slugify(`${name}_lineString`)})
     }
 
