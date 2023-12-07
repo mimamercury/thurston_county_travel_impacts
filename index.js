@@ -49,7 +49,7 @@ for (const item of items) {
         feature = turf.point(coordinates, { name, description }, { id: slugify(`${name}_point`)})
     } else {
         coordinates = coordinates.map((point) => {
-            return point.reverse()
+            return point[0].reverse()
         })
         feature = turf.lineString(coordinates, { name, description }, { id: slugify(`${name}_lineString`)})
     }
