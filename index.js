@@ -77,4 +77,3 @@ await writeJson(source_filepath, parsed)
 await writeJson(processed_filepath, data)
 await writeJson(latest_filepath, data)
 await writeJson(metadata_filepath, metadata)
-
