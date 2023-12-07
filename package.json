@@ -1,0 +1,25 @@
+{
+  "name": "travel_impacts",
+  "version": "0.0.0",
+  "description": "Thurston County travel impacts data",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mimamercury/travel_impacts.git"
+  },
+  "author": "sethvincent <sethvincent@gmail.com> (https://sethvincent.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mimamercury/travel_impacts/issues"
+  },
+  "homepage": "https://github.com/mimamercury/travel_impacts#readme",
+  "dependencies": {
+    "@editorialapp/datatools": "^1.4.0",
+    "@turf/helpers": "^6.5.0",
+    "playwright": "^1.40.1"
+  }
+}
