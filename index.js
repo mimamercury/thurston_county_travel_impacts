@@ -41,7 +41,7 @@ const features = []
 for (const item of items) {
     const name = item[5][0][1][0]
     const description = item[5][1][1][0]
-    const coordinates = (item[1] || item[2])[0][0]
+    const coordinates = (item[1] || item[2])[0][0].reverse()
 
     let feature
     if (coordinates.length === 2) {
